@@ -1,0 +1,63 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background: #f4f4f9;
+}
+
+h1 {
+  color: #333;
+}
+
+/* Button Hover (Transition Example) */
+.animated-btn {
+  background: #6200ea;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.animated-btn:hover {
+  background: #3700b3;
+  transform: scale(1.1);
+}
+
+/* Box Animation */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 2rem auto;
+  background: coral;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.box.animate {
+  transform: rotate(360deg) scale(1.2);
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.popup.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.hidden {
+  display: none;
+}
